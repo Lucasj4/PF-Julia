@@ -18,47 +18,52 @@ body{
 }
 /* Header */
 header {
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.7);
+
     width: 100%;
     overflow: hidden;
 }
-
-.contenedor{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
+.navbar a{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
 }
 
-/* MENU NAVEGACIO */
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.logo{
+    height: 40px;
+}
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF0000;
+    transition: width 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+    transform: scaleX(1);
 }
 
 
-.navbar__enlaces a{
-    text-decoration: none;
-    color: #FFF;
-    margin-right: 10px;
-}
-   
-
-.navbar__logo img{
-    height: 50px;
-    vertical-align: middle;   
-}
 
 
 /* INDEX MAIN */
 
 /* TEXTOS MAIN */
-main{
-    height: calc(100vh - 60px);
-}
+
 .textos {
     height: inherit;
     display: flex; /* Utiliza un contenedor flexible */
@@ -93,85 +98,125 @@ main{
 }
 
 /* CLASES */
-.clases{
+.classes{
     height: calc(100vh - 60px);
-
+}
+.classes__container{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 30px;
+    height: inherit;
+    justify-content: space-around;
+    padding: 20px 0;
+    align-items: center;
+    transition: all 0.5;
 }
 
-.clases__items{
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
+.card{
+    border: none;
     
 }
 
-.clases__items div{
-    background-color: #950101;
-    color: #fff;
-    text-align: center;
-    width: 25%;
-    margin-right: 3%; 
-    border-radius: 10px;
-    margin-right: 3%;
-    display: inline-block;    
+.card:hover{
+    transform: scale(1.1);
 }
 
-.clases__items img{
-    width: 100%;
-    height: 180px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+.card-body h3{
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 
-.clases__items button{
-    padding: 5px;
-    margin: 5px 0;
-    background-color: #3D0000;
-    border: 1px solid #3D0000 ;
-    border-radius: 10px;
-    color: #fff;
-    
+.card img{
+    height: 130px;
     
 }
+.card-body{
+    background-color: #AF0404;
+    height: auto;
+}
 
+.btn-primary{
+    background-color: #252525;
+    border: 1px solid #252525;
+    font-family: 'Raleway', sans-serif;
+}
 /* HORARIOS */
-.horarios{
-    height: 350px;
+.schedules{
     margin: 0 auto;
-    background-color: #950101;
+    background-color: #414141;
 }
-.horarios h2{
+.schedules__container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.schedules__texts{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 10px 0;
+}
+
+.schedules__title{
     color: #FFF;
     font-weight: 700;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 2rem;
+    align-self: center;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 10px;
+} 
 
+.schedules__img{
+    height: 60px;
+    padding: 0 10px;
 }
-.horarios table{
+
+.schedules__table{
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     padding: 10px 0;
   }
   
-.horarios th,
+.schedules__table-header{
+      background-color: #252525;
+      width: 100px;
+      color: #fff;
+      padding: 2px;
+      font-family: 'Raleway', sans-serif;
+}
+
+.schedules__table tr,
   td {
-    border: 2px solid #000000;
-    padding: 8px;
+    border: 2px solid #252525;
+    padding: 2px;
     text-align: center;
-    background-color: #FF0000;
+    background-color: #AF0404;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
   }
-  
-.horarios th {
-    background-color: #3D0000;
+
+
+
+.schedules__table-texts{
+    width: 90%;
+    margin-top: 20px;
     color: #fff;
-  }
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    
+    
+    
+}
+.schedules__table-texts div{
+    width: 50%;
+   
+}
 /* ACCEDER FORMULARIO */
 
 
@@ -400,15 +445,119 @@ color:#fff ;
 }
 
 
+/* FOOTER */
 .footer{
-    background-color: #3D0000;
+    background-color: #252525;
     height: 80px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+
+}
+
+.footer p{
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 
+@media only screen and (max-width: 993px){
+    .classes{
+        height: auto;
+    }
+    .classes__container{
+        display: grid;
+        grid-template-columns: repeat(2, 35%);
+        gap: 30px;
+        height: inherit;
+        justify-content: space-around;
+        padding: 20px 0;
+        align-items: center;
+        transition: all 0.5;
+    }
+    .schedules__title{
+        font-size: 2rem;
+    }
+    .schedules__img{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .classes__container{
+        display: grid;
+        grid-template-columns:1fr;
+       
+
+    }
+    .schedules__title{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .schedules__table{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link:hover{
+        background-color: #FF0000;
+    }
+
+    .card{
+        width: 50%;
+    }
+
+    .card img{
+    height: 120px;
+    }
+
+    .card-title{
+    font-size: 1.2rem;
+    width: 100%;
+    
+    }
+
+    .schedules__title{
+        font-size: 1rem;
+    }
+
+    .schedules__img{
+        height: 35px;
+    }
+    .schedules__table-header{
+        padding: 1px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .schedules__table tr,
+    td {
+    padding: 1px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    
+    }
+
+    .schedules__table-texts{
+       font-size: 0.7rem;
+    }
+    .footer p{
+        font-size: 0.7rem;
+    }
+
+}
 
 

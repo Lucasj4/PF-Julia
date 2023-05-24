@@ -9,21 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>VitalGym</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar contenedor">
-                <div class="navbar__enlaces">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="clases.html">Clases</a>
-                    <a href="registro.html">Registrarse</a>
-                    <a href="acceder.html">Acceder</a>
-                </div>
-                <div class="navbar__logo">
-                    <a href="../index.html"><img src="../imagenes/logo.png" alt="Logo"></a>
-                </div>         
+        <nav class="navbar navbar-expand-sm navbar-dark  ">
+            <div class="container">
+              <a href="../index.html" class="navbar-brand"><img src="../imagenes/logo.png" alt="" class="logo"></a>
+              
+              <!-- --Boton para el menu movil-- -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" arial-controls="menu" aria-expanded="false" aria-label="Mostral / Ocultar menu">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- --Menu de navegacion-- -->
+              <div class="collapse navbar-collapse justify-content-end d-sm-block" id="menu">
+                <ul class="navbar-nav">
+                  <il class="nav-item"><a href="./paginas/acceder.html" class="nav-link">Acceder</a>
+                  </il>
+                  <il class="nav-item"><a href="./paginas/clases.html" class="nav-link">Clases</a>
+                  </il>
+                  <il class="nav-item"><a href="./paginas/nosotros.html" class="nav-link">Nosotros</a>
+                  </il>
+                  <il class="nav-item"><a href="./paginas/registro.html" class="nav-link">Registrarse</a>
+                  </il>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
     <main class="main">
@@ -63,5 +76,6 @@
     <footer class="footer">
         <p>Copyright © 2023 Lucas Juliá. All Rights Reserved.</p>
     </footer>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

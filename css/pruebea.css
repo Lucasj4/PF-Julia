@@ -167,7 +167,7 @@ header {
 
 
 
-.schudeles__table-texts{
+.schedules__table-texts{
     width: 100%;
     /* margin: 20px auto; */
     color: #fff;
@@ -284,7 +284,14 @@ header {
     font-size: 0.7rem;
     
     }
-
+    .schedules__table-texts{
+        width: 100%;
+        /* margin: 20px auto; */
+        color: #fff;
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        
+    }
     .footer p{
         font-size: 0.7rem;
     }

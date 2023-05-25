@@ -18,7 +18,7 @@ body{
 }
 /* Header */
 header {
-
+    
     width: 100%;
     overflow: hidden;
 }
@@ -63,43 +63,45 @@ header {
 /* INDEX MAIN */
 
 /* TEXTOS MAIN */
-
-.textos {
+.main{
+    height: calc(100vh - 66px);
+}
+.main__texts{
     height: inherit;
     display: flex; /* Utiliza un contenedor flexible */
+    flex-direction: column;
     justify-content: center; /* Centra horizontalmente el contenido */
     align-items: center; /* Centra verticalmente el contenido */
 }
 
-.contenedor__textos {
-    text-align: center; /* Centra horizontalmente el texto */
-}
-
-.contenedor__textos h1 {
+.main__title{
     width: 60%;
     text-align: center;
     margin: 0 auto;
     font-size: 5rem;
     font-weight: 500;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
 }
 
-.contenedor__textos span{
+.main__title span{
     color: #FF0000;
+    font-family: 'Raleway', sans-serif;
 }
 
-.contenedor__textos p{
+.main__paragraph{
     width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
     font-size: 2rem;
     font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* CLASES */
 .classes{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 66px);
 }
 .classes__container{
     display: grid;
@@ -112,6 +114,7 @@ header {
     transition: all 0.5;
 }
 
+/* CLASES CARTAS */
 .card{
     border: none;
     
@@ -133,13 +136,21 @@ header {
 .card-body{
     background-color: #AF0404;
     height: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
-.btn-primary{
+.classes__container .btn-primary{
     background-color: #252525;
     border: 1px solid #252525;
     font-family: 'Raleway', sans-serif;
 }
+
+.classes__container .btn-primary:hover{
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+
+}
+
 /* HORARIOS */
 .schedules{
     margin: 0 auto;
@@ -175,6 +186,7 @@ header {
     padding: 0 10px;
 }
 
+/* HORARIOS TABLA */
 .schedules__table{
     border-collapse: collapse;
     width: 90%;
@@ -221,43 +233,45 @@ header {
 
 
 /* CONTENEDOR FORMULARIO ACCEDER */
-.contenedor__form{
-    position: relative;
-    height: calc(100vh - 60px)
-    
+
+.login{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* H1 FORMULARIO ACCEDER */
-.contenedor__form h1{
+
+.login h1{
     color: #FFF;
     text-align: center;
     font-size: 2rem;
     padding: 10px 0;
 }
 
-.form{
+.login__form{
     background: rgba(0, 0, 0, 0.7);
     width: 30%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
     border-radius: 10px;
 }
 
-/* IMPUT FORMULARIO ACCEDER */
-.form label{   
-display: block;
-width: 80%;
-margin: 0 auto;
-text-align: left;
-color:#fff ;
-
-
+/* LABEL FORMULARIO ACCEDER */
+.login__form label{   
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    color:#fff ;
+    
+    
 }
 
 /* IMPUT FORMULARIO ACCEDER */
-.form input{
+.login__form input{
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -266,12 +280,13 @@ color:#fff ;
     border-bottom: 1px solid #fff;
     background: transparent;
     outline: none;
-    height: 40px;
+    height: 30px;
     color: #fff;
     font-size: 1rem;
 }
+
 /* INPUT SUBMIT FORMULARIO ACCEDER */
-.form input[type="submit"]{
+.login__form input[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
@@ -281,19 +296,66 @@ color:#fff ;
     font-size: 18px;
     
 }
+.login__form input[type="submit"]:hover{
+    background-color: #AF0404;
+}
+
+.login__links {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login__links a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+.login__links a:hover{
+    color: #FFF;
+    text-decoration: underline;
+}
+.login__links p{
+    display: block;
+    text-align: center;
+    color: darkgray;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 5px 0;
+}
+
+
 /* FORMULARIO REGISTRO */
-.formulario__registro{
+.registration{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
+}
+.registration__form h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+.registration__form{
     background: rgba(0, 0, 0, 0.7);
     width: 35%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
     border-radius: 10px;
 }
 
 /* LABEL FORMULARIO REGISTRO */
-.formulario__registro label{   
+.registration__form label{   
     display: block;
     width: 80%;
     margin: 0 auto;
@@ -303,7 +365,7 @@ color:#fff ;
     }
     
 /* INPUT FORMULARIO REGISTRO */    
-.formulario__registro input{
+.registration__form input{
         display: block;
         width: 80%;
         margin: 0 auto;
@@ -318,7 +380,7 @@ color:#fff ;
 }
 
 /* INPUT SUBMIT FORMULARIO REGISTRO */
-.formulario__registro input[type="submit"]{
+.registration__form input[type="submit"]{
     border: none;
     outline: none;
     height: 40px;
@@ -328,35 +390,8 @@ color:#fff ;
     font-size: 18px;
     
 }
-
-
-
-
-.form__enlaces {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.form__enlaces a{
-    display: block;
-    text-align: center;
-    text-decoration: underline;
-    color: #FF0000;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    line-height: 20px;
-    padding: 5px 0;
-}
-
-.form__enlaces p{
-    display: block;
-    text-align: center;
-    color: darkgray;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 20px;
-    padding: 5px 0;
+.registration__form input[type="submit"]:hover{
+    background-color: #AF0404;
 }
 
 /* NOSOTROS */
@@ -365,7 +400,7 @@ color:#fff ;
 
 .Us__container{
     
-    height: calc(100vh - 60px);
+    height: calc(100vh - 66px);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -488,7 +523,7 @@ color:#fff ;
 }
 
 
-@media only screen and (max-width: 993px){
+@media only screen and (max-width: 991px){
     .classes{
         height: auto;
     }

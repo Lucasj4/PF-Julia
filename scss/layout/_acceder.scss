@@ -1,0 +1,107 @@
+
+/* ACCEDER FORMULARIO */
+
+
+/* CONTENEDOR FORMULARIO ACCEDER */
+
+.login{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
+
+    &__form{
+        background: rgba(0, 0, 0, 0.7);
+        width: 30%;
+        margin: 0 auto;
+        border-radius: 10px;
+
+        & label{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            color:#fff ;
+        }
+
+        & input{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 30px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        & input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            background-color: #FF0000;
+            border-radius: 10px;
+            font-size: 18px;
+
+            &:hover{
+                background-color: #AF0404;
+            }
+        }
+
+        
+    }
+
+    &__title{
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px 0;
+    }
+
+    &__links{
+        width: 80%;
+        margin: 0 auto;
+
+        & a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #FF0000;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 20px;
+            padding: 5px 0;
+
+            &:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
+        }
+
+    }
+    
+
+    & p{
+        display: block;
+        text-align: center;
+        color: darkgray;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        padding: 5px 0;
+    }
+
+
+}
+
+
+
+
+

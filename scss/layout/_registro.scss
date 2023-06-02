@@ -1,0 +1,64 @@
+/* FORMULARIO REGISTRO */
+.registration{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Raleway', sans-serif;
+
+    &__form{
+        background: rgba(0, 0, 0, 0.7);
+        width: 35%;
+        margin: 0 auto;
+        border-radius: 10px;
+
+        &__h1{
+            color: #FFF;
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px 0;
+        }
+        
+        & label{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            text-align: left;
+            color:#fff ;
+        }
+
+        & input{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 30px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        & input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            background-color: #FF0000;
+            border-radius: 10px;
+            font-size: 18px;
+            
+            &:hover{
+                background-color: #AF0404;
+                
+            }
+        }
+
+        
+
+    }
+}
+

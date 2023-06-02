@@ -1,0 +1,382 @@
+@media only screen and (max-width: 991px){
+    
+    .classes{
+        height: auto;
+    }
+    .classes__container{
+            display: grid;
+            grid-template-columns: repeat(2, 35%);
+            gap: 30px;
+            height: inherit;
+            justify-content: space-around;
+            padding: 20px 0;
+            align-items: center;
+            transition: all 0.5;
+    }
+    
+ 
+
+    .schedules__texts__title{
+        font-size: 2rem;
+    }
+
+    .schedules__texts__img{
+        height: 50px;
+    }
+
+    .Us__container{
+        width: 100%;
+        margin: 0 auto;
+
+        &__title{
+            font-size: 3.5rem;
+            font-weight: 700;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        &__paragraph{
+            margin: 20px auto;
+            width: 90%;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+
+
+    .trainers{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+    
+
+        &__container {
+            
+            & .card-body{
+                 height: 95px;
+             }
+
+            & .card-title{
+                font-size: 1.3rem;
+            }
+
+            & .card{
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    
+    .classes__container{
+        display: grid;
+        grid-template-columns:1fr;
+       
+
+    }
+    .schedules__texts__title{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .schedules__table{
+        width: 100%;
+    }
+    
+    .trainers{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        &__container .card{
+            width: 50%;
+            margin: 0 auto;
+
+            & .card-title{
+                font-size: 1.3rem;
+            }
+
+            & p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+
+   
+}
+
+
+
+@media (max-width: 576px) {
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+
+        &:hover{
+            background-color: #FF0000;
+        }
+    }
+
+   
+
+    .card{
+        width: 50%;
+
+        & img{
+            height: 120px;
+        }
+
+        & .card-title{
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+    
+
+
+    .schedules__texts__title{
+        font-size: 1rem;
+    }
+
+    .schedules__texts__img{
+        height: 35px;
+    }
+    .schedules__table__header{
+        padding: 1px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .schedules__table tr,
+    td {
+    padding: 1px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    
+    }
+
+    .schedules__table__texts{
+       font-size: 0.7rem;
+    }
+
+    
+    #team h2{
+        font-size: 2rem;
+    }
+
+    .Us__container__title{      
+        font-size: 2rem;       
+    }
+    
+    .Us__container__paragraph{
+        font-size: 1rem;  
+    }
+
+    .trainers__container .card .card-body{
+        height: 90px;
+        & .card-title{
+            font-size: 0.9rem;
+        }
+        & p{
+            font-size: 0.8rem;
+        }
+    }
+   
+ 
+    .footer p{
+        font-size: 0.7rem;
+    }
+
+}
+
+// @media only screen and (max-width: 991px){
+//     .classes{
+//         height: auto;
+//     }
+//     .classes__container{
+//         display: grid;
+//         grid-template-columns: repeat(2, 35%);
+//         gap: 30px;
+//         height: inherit;
+//         justify-content: space-around;
+//         padding: 20px 0;
+//         align-items: center;
+//         transition: all 0.5;
+//     }
+
+//     .schedules__title{
+//         font-size: 2rem;
+//     }
+
+//     .schedules__img{
+//         height: 50px;
+//     }
+
+//     .Us{
+//         width: 100%;
+//         margin: 0 auto;
+//     }
+
+//     .Us__title{
+        
+//         font-size: 3.5rem;
+//         font-weight: 700;
+//         font-family: 'Raleway', sans-serif;
+        
+//     }
+    
+//     .Us__paragraph{
+//         margin: 20px auto;
+//         width: 90%;
+//         color: #fff;
+//         font-size: 1.5rem;
+//         font-weight: 500;
+//         font-family: 'Raleway', sans-serif;
+//     }
+
+//     .trainers__container{
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: 1fr;
+//     }
+
+//     .trainers .card-body{
+//         height: 95px;
+//     }
+//     .trainers__container .card-title{
+//         font-size: 1.3rem;
+//     }
+    
+//     .trainers__container p{
+//         font-size: 1.1rem;
+//     }
+
+//     .trainers .card{
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+
+// }
+
+// @media only screen and (max-width:768px){
+    
+//     .classes__container{
+//         display: grid;
+//         grid-template-columns:1fr;
+       
+
+//     }
+//     .schedules__title{
+//         font-size: 1.5rem;
+//     }
+//     .card{
+//         width: 45%;
+//         margin: 0 auto;
+//     }
+
+//     .schedules__table{
+//         width: 100%;
+//     }
+    
+//     .trainers__container{
+//         grid-template-columns: 1fr;
+//         grid-template-rows: auto;
+//     }
+//     .trainers__container .card-title{
+//         font-size: 1.3rem;
+//     }
+    
+//     .trainers__container p{
+//         font-size: 1.1rem;
+//     }
+
+//     .trainers .card{
+//         width: 60%;
+//         margin: 0 auto;
+//     }
+// }
+
+
+
+// @media (max-width: 576px) {
+    
+//     .navbar-nav .nav-link {
+//         text-align: center;
+//     }
+
+//     .navbar-nav .nav-link:hover{
+//         background-color: #FF0000;
+//     }
+
+//     .card{
+//         width: 50%;
+//     }
+
+//     .card img{
+//     height: 120px;
+//     }
+
+//     .card-title{
+//     font-size: 1.2rem;
+//     width: 100%;
+    
+//     }
+
+//     .schedules__title{
+//         font-size: 1rem;
+//     }
+
+//     .schedules__img{
+//         height: 35px;
+//     }
+//     .schedules__table-header{
+//         padding: 1px;
+//         font-family: 'Raleway', sans-serif;
+//         font-size: 0.7rem;
+//     }
+
+//     .schedules__table tr,
+//     td {
+//     padding: 1px;
+//     text-align: center;
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 0.7rem;
+    
+//     }
+
+//     .schedules__table-texts{
+//        font-size: 0.7rem;
+//     }
+
+    
+//     #team h2{
+//         font-size: 2rem;
+//     }
+
+//     .Us__title{      
+//         font-size: 2rem;       
+//     }
+    
+//     .Us__paragraph{
+//         font-size: 1rem;  
+//     }
+
+//     .trainers .card-title{
+//         font-size: 1rem;
+//     }
+//     .trainers .card-body p{
+//         font-size: 0.9rem;
+//     }
+//     .footer p{
+//         font-size: 0.7rem;
+//     }
+
+// }

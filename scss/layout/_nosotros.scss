@@ -15,8 +15,8 @@
         margin: 0 auto;
 
         &__title{
-            display: inline-block;
-            font-size: 5rem;
+            
+            font-size: 6rem;
             font-weight: 700;
             color: #FF0000;
         }
@@ -25,20 +25,20 @@
             margin: 20px auto;
             width: 100%;
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
         }
 
         &__link{
-            margin: 0 auto;
+            margin: 0px auto ;
             text-align: center;
             text-decoration: none;
             background-color: #AF0404;
             color: #fff;
-            padding: 5px;
+            padding: 10px;
             width: 120px;
             border-radius: 10px;
-            font-size: 1rem;
+            font-size: 1.5rem;
 
             &:hover{
                 background-color: #FF0000
@@ -66,6 +66,12 @@
     padding: 8px 0;
     }
 }
+
+.team__texts{
+    width: 100%;
+    height: 80px;
+    background-color: #AF0404;
+}
 .trainers{
     width: 90%;
     margin: 0 auto;
@@ -78,24 +84,30 @@
         
         &__container{
             width: 90%;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            
             margin: 0 auto;
             padding: 20PX 0;
             
             & .card{
-                width: 70%;
+                width: 65%;
                 margin: 0 auto;
                 border: none;
+                box-shadow: 9px 23px 25px 7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+                border-radius: 10px;
             }
             & .card img{
                 width: 100%;
-                height: 130px;
+                height: 140px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
             }
             & .card-body{
                 background-color: #AF0404;
                 color: #fff;
-                height: 95px;
+                height: 130px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                
             }
             
             & .card-title{
@@ -107,7 +119,7 @@
             
             & .card p{
                 font-family: 'Raleway', sans-serif;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 
             }
         }

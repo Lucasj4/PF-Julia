@@ -20,7 +20,7 @@
     }
     
     .classes__container .card{
-        width: 85%;
+        width: 90%;
     }
   
 }
@@ -36,10 +36,31 @@
         font-size: 1.5rem;
     }
    
-    
+    .intro__container{
+        
+        height: 100%;
+        width: 100%;
+       
+
+        
+    }
+    .intro__title{
+        @include fonts(4rem, 'Raleway', 700, $red) ;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro__description{
+        @include fonts(2rem, 'Raleway', 500, #fff);
+        width: 100%; 
+        text-align: center;
+        margin: 0 auto;
+    }
     .classes{
         height: auto;
 
+       
         &__container{
             display: grid;
             grid-template-columns: repeat(2, 35%);
@@ -126,7 +147,10 @@
     .main__paragraph{
         font-size: 1.3rem;
     }
-    
+    .classes__texts__title{
+            font-size: 2.5rem;  
+    }
+  
     .classes__container{
         display: grid;
         grid-template-columns:1fr;
@@ -209,6 +233,13 @@
         }
     }
 
+    .classes__texts__title{
+        
+        font-size: 2rem;
+        
+        
+
+    }
     
 
 

@@ -7,20 +7,22 @@
 html{
     font-family: 'Raleway', sans-serif;
     font-size: 62,5%;
+    scroll-behavior: smooth;
 }
 
-body{
-  background-image:linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)), 
-  url(../imagenes/gimnasio.jpg);
-  background-blend-mode: multiply,multiply;
-  background-position: center;
-  background-size: cover;
+// body{
+//   background-image:linear-gradient(rgba(5,7,12,0.6), rgba(5,7,12,0.6)), 
+//   url(../imagenes/gimnasio.jpg);
+//   background-blend-mode: multiply,multiply;
+//   background-position: center;
+//   background-size: cover;
 
-}
+// }
 /* Header */
-header {
-    
+.header {
     width: 100%;
-    overflow: hidden;
+    height: 64px;
+    background: $black;
+    
 }
 

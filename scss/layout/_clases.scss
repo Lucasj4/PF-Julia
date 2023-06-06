@@ -1,25 +1,89 @@
 /* CLASES */
-.classes{
-    height: calc(100vh - 66px);
+.intro{
+    height: calc(100vh - 67px);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../../imagenes/clases.jpg);
+    background-blend-mode: multiply, multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 
+    &__container{
+        @include flexbox(column, center,flex-start,nowrap, 10px);
+        height: 100%;
+        width: 60%;
+       
+
+        
+    }
+    
+    &__title{
+        @include fonts(4rem, 'Raleway', 700, $red) ;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__description{
+        @include fonts(2rem, 'Raleway', 500, #fff);
+        width: 70%; 
+        text-align: center;
+        margin: 0 auto;
+    }
+    .btn{
+        background: none;
+        border: 1px solid $red;
+        margin: 0 auto;
+
+        &:hover{
+            background-color: $red;
+            color: #FFF;
+        }
+    }
+    
+}
+
+
+.classes{
+    height: auto;
+    background-color: $black;
+    width: 100%;
+  
+    
+    
+
+    &__texts{
+        height: 100px;
+        background-color: $dark-red;
+        
+        @include flexbox(row, center,center,nowrap, 10px);
+        
+
+        &__title{
+            @include fonts(3rem, 'Raleway', 700, #fff)
+        }
+
+     
+    }
     &__container{
         display: grid;
         grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(2, 450px);
         gap: 30px;
         height: inherit;
         justify-content: space-around;
-        padding: 20px 0;
         align-items: center;
         transition: all 0.5;
 
+
+
         & .btn-primary{
-            background-color: #252525;
-            border: 1px solid #252525;
+            background-color: $black;
+            border: 1px solid $black;
             font-family: 'Raleway', sans-serif;
 
             &:hover{
-                background-color: #FF0000;
-                border: 1px solid #FF0000;
+                background-color: $red;
+                border: 1px solid $red;
             }
         }
 
@@ -28,28 +92,60 @@
     .card{
         border: none;
         transition: 0.3;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
 
         & img{
-            height: 130px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         &-body{
-            background-color: #AF0404;
-            height: auto;
-            font-family: 'Raleway', sans-serif;
-            
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 1s;
+
+      
             & h3{
                 font-weight: 500;
                 font-family: 'Raleway', sans-serif;
             }
         }
+        &:hover .card-body{
+            right: 0;
+        }
+        
+        &-title{
+            text-transform: uppercase;
+            @include fonts(1.5rem, 'Raleway', 700, #fff)
+        }  
+        &-info{            
+            font-size: 1.2rem;
+            line-height: 25px;
+            margin: 10px 0;
+            font-weight: 400; 
+        }
 
        
     }
 
-    .card:hover{
-        transform: scale(1.1);
-    }
+    
 }
 
 
@@ -57,20 +153,17 @@
 /* HORARIOS */
 .schedules{
     margin: 0 auto;
-    background-color: #414141;
+    background-color: $grey;
 
     &__container{
         padding: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexbox(column, center,center,nowrap, 0);
+
     }
 
     &__texts{
         width: 90%;
-        display: flex;
-        justify-content: center;
+        @include flexbox(row, center,center,nowrap, 0);
         height: auto;
         padding: 10px 0;
 
@@ -96,7 +189,7 @@
         padding: 10px 0;
 
         &__header{
-            background-color: #252525;
+            background-color: $black;
             width: 100px;
             color: #fff;
             padding: 2px;
@@ -104,10 +197,10 @@
         }
 
         & tr, td{
-            border: 2px solid #252525;
+            border: 2px solid $black;
             padding: 2px;
             text-align: center;
-            background-color: #AF0404;
+            background-color: $dark-red;
             color: #fff;
             font-family: 'Raleway', sans-serif;
             width: auto;

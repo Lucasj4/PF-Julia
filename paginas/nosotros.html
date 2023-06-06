@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>VitalGym</title>
@@ -43,13 +44,13 @@
     </header>
 
     <main>
-        <section class="container">
+        <section>
             <div class="Us">
                 <div class="Us__container">
                     <h2 class="Us__container__title">Sobre nosotros</h2>
-                    <p class="Us__container__paragraph">Somos un gimnasio que se preocupa por el bienestar físico y mental de nuestros clientes. Ofrecemos una amplia variedad de clases y actividades para que puedas encontrar la que mejor se adapte a tus necesidades.</p>
-                    <p class="Us__container__paragraph">Nuestro equipo de entrenadores altamente capacitados está aquí para ayudarte a alcanzar tus objetivos de fitness y motivarte a superar tus límites.</p>
-                    <a href="#team" class="Us__container__link">Conocenos</a>  
+                    <p class="Us__container__paragraph"  >Somos un gimnasio que se preocupa por el bienestar físico y mental de nuestros clientes. Ofrecemos una amplia variedad de clases y actividades para que puedas encontrar la que mejor se adapte a tus necesidades.</p>
+                    <p class="Us__container__paragraph"   >Nuestro equipo de entrenadores altamente capacitados está aquí para ayudarte a alcanzar tus objetivos de fitness y motivarte a superar tus límites.</p>
+                    <a href="#team" class="Us__container__link"  >Conocenos</a>  
                 </div>
             </div>
             
@@ -62,7 +63,7 @@
                 <div class="trainers">
                     <div class="trainers__container">
                        <div class="card">
-                           <img src="../imagenes/personaltrainner.jpg" alt="">
+                           <img src="../imagenes/personaltrainner.jpg" clases="rounded-circle" alt="">
                            <div class="card-body d-flex flex-column justify-content-center align-items-center gap-2">
                                <h3 class="card-title text-center align-self-center m-0">Lucas Martínez</h3>
                                <p class="text-center align-self-center m-0">Personal Trainner</p>
@@ -129,5 +130,11 @@
         <p>Copyright © 2023 Lucas Juliá. All Rights Reserved.</p>
     </footer>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>

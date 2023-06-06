@@ -6,6 +6,11 @@
 
 .login{
     height: inherit;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../imagenes/gimnasio.jpg);
+    background-blend-mode: multiply, multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     @include flexbox(column, center, center,nowrap, 0);
     
     &__title{
@@ -16,10 +21,15 @@
 
     &__form{
         background: rgba(0, 0, 0, 0.7);
-        width: 30%;
+        width: 25%;
         margin: 0 auto;
+        height: 400px;
         border-radius: 10px;
         padding: 10px 0;
+
+        & div{
+            margin-top: 30px;
+        }
 
         & label{
             display: block;

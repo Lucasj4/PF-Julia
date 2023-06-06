@@ -2,9 +2,14 @@
 
 /* TEXTOS MAIN */
 .main{
-    height: calc(100vh - 66px);
+    
     &__texts{
-        height: inherit;
+        background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../imagenes/gimnasio.jpg);
+        background-blend-mode: multiply, multiply;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: calc(100vh - 66px);
         display: flex; /* Utiliza un contenedor flexible */
         flex-direction: column;
         justify-content: center; /* Centra horizontalmente el contenido */
@@ -12,7 +17,7 @@
     }
     
     &__title{
-        width: 60%;
+        width: 40%;
         text-align: center;
         margin: 0 auto;
         font-size: 5rem;

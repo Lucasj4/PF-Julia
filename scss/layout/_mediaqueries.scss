@@ -233,15 +233,17 @@
         }
     }
 
-    .classes__texts__title{
-        
+    .intro__title{
         font-size: 2rem;
-        
-        
+    }
 
+    .intro__description{
+        font-size: 1.5rem;
     }
     
-
+    .classes__container .card{
+        width: 75%;
+    }
 
     .schedules__texts__title{
         font-size: 1rem;

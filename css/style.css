@@ -69,18 +69,20 @@ html {
 
 /* INDEX MAIN */
 /* TEXTOS MAIN */
-.main {
-  height: calc(100vh - 66px);
-}
 .main__texts {
-  height: inherit;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../imagenes/gimnasio.jpg);
+  background-blend-mode: multiply, multiply;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 66px);
   display: flex; /* Utiliza un contenedor flexible */
   flex-direction: column;
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
 }
 .main__title {
-  width: 60%;
+  width: 40%;
   text-align: center;
   margin: 0 auto;
   font-size: 5rem;
@@ -106,6 +108,11 @@ html {
 /* CONTENEDOR FORMULARIO ACCEDER */
 .login {
   height: inherit;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../imagenes/gimnasio.jpg);
+  background-blend-mode: multiply, multiply;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,10 +129,14 @@ html {
 }
 .login__form {
   background: rgba(0, 0, 0, 0.7);
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
+  height: 400px;
   border-radius: 10px;
   padding: 10px 0;
+}
+.login__form div {
+  margin-top: 30px;
 }
 .login__form label {
   display: block;
@@ -760,8 +771,14 @@ html {
     font-size: 1.2rem;
     width: 100%;
   }
-  .classes__texts__title {
+  .intro__title {
     font-size: 2rem;
+  }
+  .intro__description {
+    font-size: 1.5rem;
+  }
+  .classes__container .card {
+    width: 75%;
   }
   .schedules__texts__title {
     font-size: 1rem;

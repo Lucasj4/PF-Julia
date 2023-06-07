@@ -19,8 +19,26 @@
         }
     }
     
-    .classes__container .card{
+    .classes__container__card{
         width: 90%;
+    }
+
+    .trainers__container__card{
+        width: 80%;
+        
+        &__back__title{
+            @include fonts(1.3rem, 'Raleway', 700, #fff);
+        }
+
+        &__subtitle{
+            @include fonts(1.2rem, 'Raleway', 500, #fff)
+        }
+
+        &__info{
+            @include fonts(1rem, 'Raleway', 400, #fff);
+            width:80%;
+            text-align: center;
+        }
     }
   
 }
@@ -109,22 +127,23 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
     
+        &__container__card__back{
+            &__title{
+                @include fonts(1.5rem, 'Raleway', 700, #fff);
+            }
+    
+            &__subtitle{
+                @include fonts(1.3rem, 'Raleway', 500, #fff)
+            }
+    
+            &__info{
+                @include fonts(1rem, 'Raleway', 400, #fff);
+                width:80%;
+                text-align: center;
+            }
 
-        &__container {
-            
-            & .card {
-                width: 70%;
-                margin: 0 auto;
-
-                &-body{
-                    height: 95px;
-                }
-
-                &-title{
-                    font-size: 1.3rem;
-                }
-            } 
         }
+      
     }
 
     .registration__form{
@@ -175,17 +194,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
 
-        &__container .card{
-            width: 40%;
+        &__container__card{
+            width: 50%;
             margin: 0 auto;
 
-            & .card-title{
-                font-size: 1.1rem;
-            }
-
-            & p{
-                font-size: 1rem;
-            }
+           
         }
     }
 
@@ -220,18 +233,6 @@
         font-size: 1rem;
     }
 
-    .card{
-        width: 50%;
-
-        & img{
-            height: 120px;
-        }
-
-        & .card-title{
-            font-size: 1.2rem;
-            width: 100%;
-        }
-    }
 
     .intro__title{
         font-size: 2rem;
@@ -284,14 +285,24 @@
         font-size: 1rem;  
     }
 
-    .trainers__container .card .card-body{
-        height: 90px;
-        & .card-title{
-            font-size: 0.9rem;
+    .trainers__container__card{
+       width: 80%;
+
+       &__back{
+        &__title{
+            @include fonts(1.2rem, 'Raleway', 700, #fff);
         }
-        & p{
-            font-size: 0.8rem;
+
+        &__subtitle{
+            @include fonts(1rem, 'Raleway', 500, #fff)
         }
+
+        &__info{
+            @include fonts(0.9rem, 'Raleway', 400, #fff);
+            width:80%;
+            text-align: center;
+        }
+       }
     }
     
     .registration__form{

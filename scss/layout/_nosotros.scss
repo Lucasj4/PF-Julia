@@ -17,6 +17,7 @@
         width: 70%;
         margin: 0 auto;
 
+
         &__title{
             
             font-size: 6rem;
@@ -87,49 +88,72 @@
         
         &__container{
             width: 90%;
-            
             margin: 0 auto;
             padding: 20PX 0;
-            
-            & .card{
-                width: 65%;
-                margin: 0 auto;
-                border: none;
-                box-shadow: 9px 23px 25px 7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+            &__card{
+                width: 300px;
+                height: 300px;
                 border-radius: 10px;
-            }
-            & .card img{
-                width: 100%;
-                height: 140px;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
-            }
-            & .card-body{
-                background-color: $dark-red;
-                color: #fff;
-                height: 130px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
+                position: relative;
 
-                &:hover{
-                    background-color: $black;
-                    color: $red;
+                div{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    backface-visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 1s;
                 }
-                
+                &__front{
+                   
+                    transform: perspective(500px) rotateY(0deg);
+                    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 10px;
+                        object-fit: cover;
+                    }
+                }
+                &__back{
+                    background-color: $black;
+                    background-position: center;
+                    background-size: cover;
+                    @include flexbox(column, center,center,nowrap, 10px);
+                    color: #fff;
+                    border-radius: 10px;
+                    transform: perspective(500px) rotateY(180deg);
+                    
+                    
+
+                    &__title{
+                        @include fonts(2rem, 'Raleway', 700, #fff);
+                    }
+
+                    &__subtitle{
+                        @include fonts(1.5rem, 'Raleway', 500, #fff)
+                    }
+
+                    &__info{
+                        @include fonts(1rem, 'Raleway', 400, #fff);
+                        width:80%;
+                        text-align: center;
+                    }
+                }
+                &:hover{
+                    .trainers__container__card__front{
+                        transform: perspective(500px) rotateY(180deg);
+                    }
+                    .trainers__container__card__back{
+                        transform: perspective(500px) rotateY(360deg);
+                    }
+                }
+
             }
             
-            & .card-title{
-                font-family: 'Raleway', sans-serif;
-                font-size: 1.3rem;
-                font-weight: 700;
-                width: 100%;
-            }
-            
-            & .card p{
-                font-family: 'Raleway', sans-serif;
-                font-size: 1.3rem;
-                
-            }
         }
 }
 

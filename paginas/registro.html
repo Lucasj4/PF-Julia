@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>VitalGym</title>
@@ -41,8 +42,8 @@
     </header>
     <main class="main">
         
-            <div class="registration container">
-                <form action="" class="registration__form">
+            <div class="registration">
+                <form action="" class="registration__form" data-aos="fade-down"  data-aos-duration="3000">
                     <h1 class="registration__form__h1">Registrarse</h1>
                         <div>
                             <label for="Nombre">Nombre</label>
@@ -76,6 +77,10 @@
     <footer class="footer">
         <p>Copyright © 2023 Lucas Juliá. All Rights Reserved.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

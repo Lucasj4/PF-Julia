@@ -1,11 +1,13 @@
 /* FORMULARIO REGISTRO */
 .registration{
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    height: calc(100vh - 64px);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url(../imagenes/gimnasio.jpg);
+    background-blend-mode: multiply, multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    @include flexbox(column, center,center,nowrap, 0);
 
     &__form{
         background: rgba(0, 0, 0, 0.7);

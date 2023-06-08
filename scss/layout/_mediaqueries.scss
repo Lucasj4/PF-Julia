@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1400px){
+    // NOSOTROS
     .Us__container{
         padding: 10px 0;
         overflow: hidden;
@@ -18,7 +19,7 @@
             font-size: 1.3rem;
         }
     }
-    
+    // CLASES
     .classes__container__card{
         width: 90%;
     }
@@ -44,7 +45,7 @@
 }
 
 @media only screen and (max-width: 991px){
-    
+    // INDEX
     .main__title{
         width: 70%;
         font-size: 3.5rem;     
@@ -53,14 +54,11 @@
     .main__paragraph{
         font-size: 1.5rem;
     }
-   
+    
+    // CLASES
     .intro__container{
-        
         height: 100%;
-        width: 100%;
-       
-
-        
+        width: 100%;      
     }
     .intro__title{
         @include fonts(4rem, 'Raleway', 700, $red) ;
@@ -98,6 +96,7 @@
         height: 50px;
     }
 
+    // NOSOTROS
     .Us__container{
         width: 100%;
        
@@ -146,10 +145,11 @@
       
     }
 
+    // REGISTRO
     .registration__form{
         width: 50%;
     }
-
+    // ACCEDER
     .login__form{
         width: 50%;
     }
@@ -158,14 +158,16 @@
 
 @media only screen and (max-width:768px){
 
+    // INDEX
     .main__title{
-       
         font-size: 3rem;     
     }
 
     .main__paragraph{
         font-size: 1.3rem;
     }
+
+    // CLASES
     .classes__texts__title{
             font-size: 2.5rem;  
     }
@@ -178,8 +180,6 @@
             width: 50%;
             margin: 0 auto;
         }
-       
-
     }
     .schedules__texts__title{
         font-size: 1.5rem;
@@ -190,6 +190,7 @@
         width: 100%;
     }
     
+    // NOSOTROS
     .trainers{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -233,7 +234,7 @@
         font-size: 1rem;
     }
 
-
+    // CLASES
     .intro__title{
         font-size: 2rem;
     }
@@ -272,7 +273,7 @@
        font-size: 0.7rem;
     }
 
-    
+    // NOSOTROS
     #team h2{
         font-size: 2rem;
     }
@@ -313,7 +314,7 @@
     }
  
     .footer p{
-        font-size: 0.7rem;
+        font-size: 1.5rem;
     }
 
 }

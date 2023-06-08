@@ -7,22 +7,20 @@
     background-size: cover;
     background-attachment: fixed;
 
+    // CONTENEDOR DE TEXTOS EN LA INTRO
     &__container{
         @include flexbox(column, center,flex-start,nowrap, 10px);
         height: 100%;
-        width: 60%;
-       
-
-        
+        width: 60%;      
     }
-    
+    // TITULO
     &__title{
         @include fonts(4rem, 'Raleway', 700, $red) ;
         width: 70%;
         margin: 0 auto;
         text-align: center;
     }
-
+    // PARRAFO
     &__description{
         @include fonts(2rem, 'Raleway', 500, #fff);
         width: 70%; 
@@ -64,6 +62,8 @@
 
      
     }
+    
+    // CONTENEDOR DE CARDS
     &__container{
         display: grid;
         grid-template-columns: repeat(3, 25%);

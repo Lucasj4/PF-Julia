@@ -169,7 +169,7 @@ html {
   outline: none;
   height: 40px;
   color: #fff;
-  background-color: #FF0000;
+  background-color: #AF0404;
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: "Raleway";
@@ -177,7 +177,7 @@ html {
   color: #fff;
 }
 .login__form input[type=submit]:hover {
-  background-color: #AF0404;
+  background-color: #252525;
 }
 .login__links {
   width: 80%;
@@ -630,12 +630,12 @@ html {
   outline: none;
   height: 40px;
   color: #fff;
-  background-color: #FF0000;
+  background-color: #AF0404;
   border-radius: 10px;
   font-size: 18px;
 }
 .registration__form input[type=submit]:hover {
-  background-color: #AF0404;
+  background-color: #252525;
 }
 
 @media only screen and (max-width: 1400px) {

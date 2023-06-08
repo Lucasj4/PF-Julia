@@ -57,12 +57,12 @@
             outline: none;
             height: 40px;
             color: #fff;
-            background-color: $red;
+            background-color: $dark-red;
             border-radius: 10px;
             @include fonts(1.2rem, 'Raleway', 400, #fff);
 
             &:hover{
-                background-color: $dark-red;
+                background-color: $black;
             }
         }
 

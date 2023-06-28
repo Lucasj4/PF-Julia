@@ -16,10 +16,9 @@
         border-radius: 10px;
 
         &__h1{
-            color: #FFF;
-            text-align: center;
-            font-size: 2rem;
             padding: 10px 0;
+            text-align: center;
+            @include fonts(2rem, 'Raleway', 700, #fff);
         }
         
         & label{
@@ -27,7 +26,7 @@
             width: 80%;
             margin: 0 auto;
             text-align: left;
-            color:#fff ;
+            @include fonts(1rem, 'Raleway', 400, #fff);
         }
 
         & input{

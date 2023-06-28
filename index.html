@@ -17,36 +17,73 @@
 </head>
 <body>
     <header class="header">
+
         <nav class="navbar navbar-expand-sm navbar-dark  ">
-            <div class="container">
-              <a href="./index.html" class="navbar-brand"><img src="imagenes/logo.png" alt="logo-gimnasio" class="logo"></a>
+          <div class="container">
+            <a href="../index.html" class="navbar-brand"><img src="./imagenes/logo.png" alt="logo-gimnasio" class="logo"></a>
+            
+            <!-- --Boton para el menu movil-- -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" arial-controls="menu" aria-expanded="false" aria-label="Mostral / Ocultar menu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- --Menu de navegacion-- -->
+            <div class="collapse navbar-collapse justify-content-end d-sm-block" id="menu">
+              <ul class="navbar-nav">
+                  
+                      <il class="nav-item"><a href="./paginas/acceder.html" class="nav-link">Acceder</a>
+                      </il>
+                      <il class="nav-item"><a href="./paginas/clases.html" class="nav-link">Clases</a>
+                      </il>
+                      <il class="nav-item"><a href="./paginas/nosotros.html" class="nav-link">Nosotros</a>
+                      </il>
+                      <il class="nav-item"><a href="./paginas/registro.html" class="nav-link">Registrarse</a>
+                      </il>
               
-              <!-- --Boton para el menu movil-- -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" arial-controls="menu" aria-expanded="false" aria-label="Mostral / Ocultar menu">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- --Menu de navegacion-- -->
-              <div class="collapse navbar-collapse justify-content-end d-sm-block" id="menu">
-                <ul class="navbar-nav">
-                  <il class="nav-item"><a href="./paginas/acceder.html" class="nav-link">Acceder</a>
-                  </il>
-                  <il class="nav-item"><a href="./paginas/clases.html" class="nav-link">Clases</a>
-                  </il>
-                  <il class="nav-item"><a href="./paginas/nosotros.html" class="nav-link">Nosotros</a>
-                  </il>
-                  <il class="nav-item"><a href="./paginas/registro.html" class="nav-link">Registrarse</a>
-                  </il>
-                </ul>
-              </div>
+              </ul>
             </div>
-        </nav>
+          </div>
+      </nav>
+
     </header>
     <main class="main">
         <section class="main__texts" >          
           <h1 class="main__title" data-aos="zoom-in-right"  data-aos-duration="3000">Bienvenidos a <span>VitalGym</span></h1>
           <p class="main__paragraph" data-aos="zoom-in-right"  data-aos-duration="3000" >Tu cuerpo es tu templo, cuídalo en nuestro gimnasio.</p>
         </section>
-
+        <section class="trainingprograms">
+          <h2 class="trainingprograms__title">Elige tu Plan</h2>
+          <div class="trainingprograms__tables">
+              <div class="trainingprograms__tables__programs" data-aos="zoom-in-up"  data-aos-duration="2000">
+                <h3 class="trainingprograms__tables__programs-name">Estandar</h3>
+                <p class="trainingprograms__tables__programs-price">$4500</p>
+                <h4 class="trainingprograms__tables__programs-benefice">Fotografia de frente y perfil</h4>
+                <h4 class="trainingprograms__tables__programs-benefice">Balanza bioimpedancia</h4>
+                <h4 class="trainingprograms__tables__program-benefice">Entrenamiento de acuerdo a los objetivos</h4>
+                <h4 class="trainingprograms__tables__programs-benefice">2 clases por semana de regalo a elección</h4>
+                <a href="" class="trainingprograms__tables__programs-button">Anortarme</a>
+              </div>
+              <div class="trainingprograms__tables__programs" data-aos="zoom-in-up"  data-aos-duration="2000">
+                <h3 class="trainingprograms__tables__programs-name">Premium</h3>
+                <p class="trainingprograms__tables__programs-price">$10000</p>
+                <h4 class="trainingprograms__tables__programs-benefice">Beneficios de estandar y Personalizado </h4>
+                <h4 class="trainingprograms__tables__programs-benefice">Entrenamiento de acuerdo a compensaciones corporales</h4>
+                <h4 class="trainingprograms__tables__programs-benefice">Clases a eleccion toda la semana</h4>
+                <h4 class="trainingprograms__tables__programs-benefice">Estiramientos asistidos</h4>
+                <h4 class="trainingprograms__tables__programs-benefice">Personal Trainner</h4>
+                <a href="" class="trainingprograms__tables__programs-button">Anortarme</a>
+              </div>
+              <div class="trainingprograms__tables__programs" data-aos="zoom-in-up"  data-aos-duration="2000">
+                  <h3 class="trainingprograms__tables__programs-name">Personalizado</h3>
+                  <p class="trainingprograms__tables__programs-price">$5500</p>
+                  <h4 class="trainingprograms__tables__programs-benefice">Fotografia de frente y perfil</h4>
+                  <h4 class="trainingprograms__tables__programs-benefice">Gimnasia postural</h4>
+                  <h4 class="trainingprograms__tables__programs-benefice">Entrenamiento de acuerdo a compensaciones corporales</h4>
+                 
+                  <h4 class="trainingprograms__tables__programs-benefice">3 clases por semana de regalo a elección</h4>
+                  <a href="" class="trainingprograms__tables__programs-button">Anortarme</a>
+              </div>
+          </div>
+        </section>
     </main>
     
 <footer class="footer">

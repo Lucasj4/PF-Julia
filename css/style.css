@@ -10,20 +10,24 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Header */
 .header {
   width: 100%;
-  height: 64px;
-  background: #252525;
-}
-
-.navbar a {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.6);
+  background-color: #252525;
+}
+.navbar-nav .nav-item a {
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.navbar .offcanvas-header {
+  background-color: #252525;
+}
+.navbar .offcanvas-body {
+  background-color: #252525;
 }
 
 .navbar-nav .nav-link {
@@ -103,6 +107,83 @@ html {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Raleway", sans-serif;
+}
+.main .trainingprograms {
+  width: 100%;
+  height: auto;
+  background-color: #252525;
+}
+.main .trainingprograms__title {
+  font-size: 3rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+.main .trainingprograms__tables {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10;
+  height: auto;
+  padding: 30px 0;
+}
+.main .trainingprograms__tables__programs {
+  width: 30%;
+  text-align: center;
+  background: #414141;
+  color: #fff;
+  height: auto;
+  border-radius: 10px;
+  padding: 30px 10px;
+  overflow: hidden;
+}
+.main .trainingprograms__tables__programs:nth-child(2) {
+  background-color: #AF0404;
+}
+.main .trainingprograms__tables__programs-name {
+  font-size: 2.3rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #fff;
+}
+.main .trainingprograms__tables__programs-price {
+  font-size: 1.5rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.main .trainingprograms__tables__programs-benefice {
+  font-size: 1.3rem;
+  font-family: "Raleway";
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 15px auto;
+  border-bottom: 1px dotted #fff;
+  padding-bottom: 5px;
+}
+.main .trainingprograms__tables__programs-button {
+  background: #fff;
+  color: #252525;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 100px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #252525;
+}
+.main .trainingprograms__tables__programs-button:hover {
+  background: #252525;
+  color: #fff;
 }
 
 /* ACCEDER FORMULARIO */
@@ -555,12 +636,14 @@ html {
   font-family: "Raleway";
   font-weight: 700;
   color: #fff;
+  text-align: center;
 }
 .trainers__container__card__back__subtitle {
   font-size: 1.5rem;
   font-family: "Raleway";
   font-weight: 500;
   color: #fff;
+  text-align: center;
 }
 .trainers__container__card__back__info {
   font-size: 1rem;
@@ -600,16 +683,21 @@ html {
   border-radius: 10px;
 }
 .registration__form__h1 {
-  color: #FFF;
+  padding: 10px 0;
   text-align: center;
   font-size: 2rem;
-  padding: 10px 0;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #fff;
 }
 .registration__form label {
   display: block;
   width: 80%;
   margin: 0 auto;
   text-align: left;
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: 400;
   color: #fff;
 }
 .registration__form input {
@@ -689,6 +777,9 @@ html {
   }
   .main__paragraph {
     font-size: 1.5rem;
+  }
+  .trainingprograms__tables__programs-name {
+    color: #FF0000;
   }
   .intro__container {
     height: 100%;
@@ -789,6 +880,14 @@ html {
   .main__paragraph {
     font-size: 1.3rem;
   }
+  .trainingprograms__tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10;
+  }
   .classes__texts__title {
     font-size: 2.5rem;
   }
@@ -841,8 +940,25 @@ html {
   .intro__description {
     font-size: 1.5rem;
   }
+  .classes__texts__title {
+    font-size: 1.5rem;
+  }
   .classes__container .card {
-    width: 75%;
+    width: 80%;
+  }
+  .classes__container .card-title {
+    font-size: 1.1rem;
+    font-family: "Raleway";
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+  .classes__container .card-info {
+    font-size: 1rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
   }
   .schedules__texts__title {
     font-size: 1rem;
@@ -869,10 +985,17 @@ html {
     font-size: 2rem;
   }
   .Us__container__title {
-    font-size: 2rem;
+    padding-top: 30px;
+    font-size: 1.5rem;
+    font-family: "Raleway";
+    font-weight: 700;
+    color: #FF0000;
   }
   .Us__container__paragraph {
     font-size: 1rem;
+    font-family: "Raleway";
+    font-weight: 400;
+    color: #fff;
   }
   .trainers__container__card {
     width: 80%;
@@ -900,8 +1023,12 @@ html {
   .registration__form {
     width: 80%;
   }
+  .login__title {
+    font-size: 1.5rem;
+  }
   .login__form {
-    width: 75%;
+    width: 80%;
+    height: auto;
   }
   .footer p {
     font-size: 0.8rem;

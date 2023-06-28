@@ -54,6 +54,14 @@
     .main__paragraph{
         font-size: 1.5rem;
     }
+
+    .trainingprograms__tables__programs-name{
+        color: #FF0000;
+        
+    }
+        
+    
+    
     
     // CLASES
     .intro__container{
@@ -166,7 +174,9 @@
     .main__paragraph{
         font-size: 1.3rem;
     }
-
+    .trainingprograms__tables{
+        @include flexbox(column, space-around,center,wrap, 10);
+    }
     // CLASES
     .classes__texts__title{
             font-size: 2.5rem;  
@@ -243,10 +253,21 @@
         font-size: 1.5rem;
     }
     
-    .classes__container .card{
-        width: 75%;
+    .classes__texts__title{
+        font-size: 1.5rem;
+        
     }
-
+    .classes__container .card{
+        width: 80%;
+        &-title{
+            @include fonts(1.1rem, 'Raleway', 700, #fff);
+            text-align: center;
+        }
+        &-info{
+            @include fonts(1rem, 'Raleway', 400,#fff);
+            text-align: center;
+        }
+    }
     .schedules__texts__title{
         font-size: 1rem;
     }
@@ -278,12 +299,14 @@
         font-size: 2rem;
     }
 
+
     .Us__container__title{      
-        font-size: 2rem;       
+        padding-top: 30px;
+        @include fonts(1.5rem, 'Raleway', 700, $red);   
     }
     
     .Us__container__paragraph{
-        font-size: 1rem;  
+        @include fonts(1rem, 'Raleway', 400, #fff);     
     }
 
     .trainers__container__card{
@@ -309,9 +332,17 @@
     .registration__form{
         width: 80%;
     }
-    .login__form{
-        width: 75%;
+    .login{
+     
+       &__title{
+        font-size: 1.5rem;
+       } 
+       &__form{
+        width: 80%;
+        height: auto;
     }
+    }
+
  
     .footer p{
         font-size: 0.8rem;

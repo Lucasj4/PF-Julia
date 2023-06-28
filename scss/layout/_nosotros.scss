@@ -128,16 +128,19 @@
                     color: #fff;
                     border-radius: 10px;
                     transform: perspective(500px) rotateY(180deg);
+                    // height: auto;
                     
                     
 
                     &__title{
                         @include fonts(2rem, 'Raleway', 700, #fff);
+                        text-align: center;
                     }
 
                     &__subtitle{
-                        @include fonts(1.5rem, 'Raleway', 500, #fff)
-                    }
+                        @include fonts(1.5rem, 'Raleway', 500, #fff);
+                        text-align: center;
+                    }   
 
                     &__info{
                         @include fonts(1rem, 'Raleway', 400, #fff);

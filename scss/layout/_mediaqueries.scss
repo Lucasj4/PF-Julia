@@ -53,11 +53,13 @@
 
     .main__paragraph{
         font-size: 1.5rem;
-    }
-
-    .trainingprograms__tables__programs-name{
-        color: #FF0000;
         
+    }
+    
+    .trainingprograms{
+        &__tables__programs__name{
+            @include fonts(1.8rem, 'Raleway', 700, #fff);
+        }
     }
         
     
@@ -175,7 +177,10 @@
         font-size: 1.3rem;
     }
     .trainingprograms__tables{
-        @include flexbox(column, space-around,center,wrap, 10);
+        @include flexbox(column, space-around,center,wrap, 20px);
+        &__programs{
+            width: 45%;
+        }
     }
     // CLASES
     .classes__texts__title{
@@ -237,11 +242,26 @@
 
     .main__title{
         width:75%;
-        font-size: 2.3rem;     
+        font-size: 2rem;     
     }
 
     .main__paragraph{
         font-size: 1rem;
+    }
+    .trainingprograms__title{
+        @include fonts(2rem, 'Raleway', 700, #fff);
+    }
+    .trainingprograms__tables__programs{
+        width: 75%;
+        &__name{
+            @include fonts(1.3rem, 'Raleway', 700, #fff);
+        }
+        &__price{
+            @include fonts(1.1rem, 'Raleway', 500, #fff);
+        }
+        &__benefice{
+            @include fonts(1rem, 'Raleway', 400, #fff);
+        }
     }
 
     // CLASES

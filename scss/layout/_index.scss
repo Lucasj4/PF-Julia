@@ -39,10 +39,11 @@
         font-weight: 500;
         font-family: 'Raleway', sans-serif;
     }
-    .trainingprograms{
+}
+.trainingprograms{
         width: 100%;
         height: auto;
-        background-color: $black;
+        background-color: $grey;
 
         &__title{
             @include fonts(3rem, 'Raleway', 700, #fff);
@@ -59,25 +60,27 @@
            &__programs{
             width: 30%;
             text-align: center;
-            background: $grey;
+            background: $black;
             color: #fff;
             height: auto;
             border-radius: 10px;
             padding: 30px 10px;
             overflow: hidden;
+            
             &:nth-child(2){
                 
                 background-color: $dark-red;
             }
-            &-name{
+            &__name{
                 @include fonts(2.3rem, 'Raleway', 700, #fff);
+                text-align: center
                 
             }
-            &-price{
+            &__price{
                 @include fonts(1.5rem, 'Raleway', 500, #fff);
                 margin-bottom: 25px;
             }
-            &-benefice{
+            &__benefice{
                 @include fonts(1.3rem, 'Raleway', 400, #fff);
                 
                 text-align: center;
@@ -86,7 +89,7 @@
                 padding-bottom: 5px;
                 
             }
-            &-button{
+            &__button{
                 background: #fff;
                 color: $black;
                 display: inline-block;
@@ -97,15 +100,16 @@
                 border-radius: 7px;
                 @include fonts(1rem, 'Raleway', 700, $black);
                 &:hover{
-                    background: $black;
+                    background: $grey;
                     color: #fff;
                 }
 
             }
            }
         }
-    }
+ 
 }
+
 
 
 

@@ -1058,6 +1058,9 @@ html {
   .registration__form {
     width: 80%;
   }
+  .registration__form__h1 {
+    font-size: 1.5rem;
+  }
   .login__title {
     font-size: 1.5rem;
   }
